@@ -1,0 +1,181 @@
+.main-location {
+	display: flex;
+	flex-direction: column;
+	.slider {
+		overflow: hidden;
+		border-radius: 25px;
+	}
+	.sliderpic {
+		width: 1240px;
+		height: 415px;
+	}
+
+	.bio-location {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 0;
+
+		h2 {
+			color: $color-1;
+			font-family: $font-1;
+			font-weight: 400;
+			font-size: 36px;
+		}
+
+		p {
+			color: $color-1;
+			font-family: $font-1;
+			font-weight: 400;
+			font-size: 18px;
+		}
+	}
+
+	.bio-host {
+		display: flex;
+
+		.bio-name {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			margin-right: 10px;
+		}
+
+		img {
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+		}
+	}
+
+	ul {
+		display: flex;
+	}
+
+	.bio-tag-ratings {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+
+		li {
+			background-color: $color-1;
+			padding: 5px 25px;
+			margin-right: 8px;
+			color: white;
+			font-family: $font-1;
+			font-weight: 400;
+			font-size: 14px;
+			border-radius: 10px;
+		}
+	}
+
+	.location-dropmenu {
+		display: flex;
+		width: 1240px;
+		gap: 5rem;
+
+		div {
+			width: 100%;
+		}
+
+		.dropheader {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+			border-radius: 10px;
+			color: white;
+			font-family: $font-1;
+			font-weight: 400;
+			font-size: 18px;
+
+			img {
+				height: 16px;
+			}
+		}
+
+		.dropmenu-expanded {
+			background-color: #f6f6f6;
+			padding: 1rem;
+			color: $color-1;
+			font-family: $font-1;
+			font-size: 18px;
+			border-radius: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-PC) {
+	.location--page {
+		width: 90%;
+		margin: 0 auto;
+
+		.location-dropmenu {
+			width: 100%;
+		}
+
+		.bio-host {
+			align-items: center;
+		}
+	}
+
+	.sliderpic {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.main-location {
+		.bio-info {
+			h2 {
+				font-size: 18px;
+				margin-bottom: 0.8rem;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+
+		.bio-host {
+			align-items: center;
+			img {
+				width: 32px;
+				height: 32px;
+			}
+		}
+		.bio-name {
+			p {
+				font-size: 12px;
+			}
+		}
+
+		.bio-tag-ratings {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+
+			li {
+				font-size: 10px;
+			}
+
+			.stars--rating {
+				img {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+		.location-dropmenu {
+			flex-direction: column;
+			gap: 2rem;
+
+			.dropheader {
+				font-size: 13px;
+			}
+			.dropmenu-expanded {
+				font-size: 12px;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.main-error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5rem;
+	.error-nbr {
+		color: $color-1;
+		font-size: 300px;
+	}
+
+	.error-oups {
+		color: $color-1;
+		font-family: $font-1;
+		font-weight: 400;
+		font-size: 36px;
+	}
+
+	.error-return {
+		color: $color-1;
+		font-family: $font-1;
+		font-weight: 400;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: $breakpoint-PC) {
+	.main-error {
+		gap: 3rem;
+		.error-nbr {
+			font-size: 250px;
+		}
+		.error-oups {
+			text-align: center;
+			font-size: 24px;
+		}
+		.error-return {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.main-error {
+		gap: 3rem;
+		.error-nbr {
+			font-size: 150px;
+		}
+		.error-oups {
+			text-align: center;
+			font-size: 18px;
+			width: 60%;
+		}
+		.error-return {
+			font-size: 14px;
+		}
+	}
+}

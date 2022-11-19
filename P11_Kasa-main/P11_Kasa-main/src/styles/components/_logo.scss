@@ -1,0 +1,12 @@
+.logo {
+	img {
+		height: 68px;
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.logo img {
+		height: 47px;
+		width: 145px;
+	}
+}
